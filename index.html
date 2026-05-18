@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- html2canvas library for PNG export -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="planner-wrapper">
+    <div class="planner-header">
+        <h1>Weekly Planner</h1>
+        <div class="header-actions">
+            <button class="reset-btn" id="resetAllBtn" aria-label="Reset all tasks">Reset</button>
+            <button class="png-btn" id="exportPngBtn" aria-label="Export as PNG">Export</button>
+        </div>
+    </div>
+
+    <!-- THIS IS THE EXACT AREA THAT WILL BE CAPTURED AS PNG -->
+    <div id="plannerCapture" class="planner-capture-area">
+        <div class="week-grid" id="weekGrid"></div>
+        <div class="footer-note">
+            💕 Made by Isabela Nardi.
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
