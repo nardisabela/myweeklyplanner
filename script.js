@@ -130,7 +130,7 @@ function toggleTaskComplete(dayName, taskIndex) {
 }
 
 function resetAllTasks() {
-    if (confirm("🌸 Reset all your lovely tasks for this week? This can't be undone. 🌸")) {
+    if (confirm("🌸 Reset all your tasks for this week? This can't be undone. 🌸")) {
         plannerData.tasks = getEmptyTasksStructure();
         saveToLocalStorage();
         renderPlanner();
@@ -237,7 +237,7 @@ function renderPlanner() {
         if (tasksArray.length === 0) {
             const emptyMsg = document.createElement('li');
             emptyMsg.className = 'empty-tasks';
-            emptyMsg.innerText = '💖 add a cute task 💖';
+            emptyMsg.innerText = 'add a task';
             tasksList.appendChild(emptyMsg);
         } else {
             tasksArray.forEach((task, tIndex) => {
